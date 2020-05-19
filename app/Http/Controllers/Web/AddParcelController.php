@@ -1,0 +1,201 @@
+<?php
+
+namespace App\Http\Controllers\Web;
+use Illuminate\Support\Facades\Auth;
+use App\User;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\tblParcelNewModel;
+use App\tblParcelStatusHistoryModel;
+use Carbon\Carbon;
+class AddParcelController extends Controller
+{
+    public function addparcelt()
+    {
+        $user = Auth::user();
+       $tblParcelNewModel = new tblParcelNewModel();
+       $mytime  = Carbon::now();
+       $mytime->setTimezone('Asia/Tashkent');
+       $mytime->toDateTimeString();
+       $refNumber1 = rand(100000000000, 999999999999);
+    //    $digits =(string)$refNumber1;
+    //    $even_sum = $digits{1} + $digits{3} + $digits{5} + $digits{7} + $digits{9} + $digits{11};
+    //    $even_sum_three = $even_sum * 3;
+    //    $odd_sum = $digits{0} + $digits{2} + $digits{4} + $digits{6} + $digits{8} + $digits{10};
+    //    $total_sum = $even_sum_three + $odd_sum;
+    //    $next_ten = (ceil($total_sum/10))*10;
+    //    $check_digit = $next_ten - $total_sum;
+    //    $refNumber = $digits . $check_digit;
+
+       $tblParcelNewModel->refNumber = $refNumber1;
+        $tblParcelNewModel->parcelDescription =  "Текстильные образцы";
+        $tblParcelNewModel->parcelWeight =  "1";
+        $tblParcelNewModel->parcelLength =  "30";
+        $tblParcelNewModel->parcelWidth =  "25";
+        $tblParcelNewModel->parcelHeight =  "5";
+        $tblParcelNewModel->parcelImage =  "storage/images/4805197089687-photo_2020-03-09_15-50-56.jpg";
+        $tblParcelNewModel->parcelInvoiceImage = "storage/images/4805197089687-photo_2020-03-09_15-50-56.jpg";
+        $tblParcelNewModel->parcelCreateDate =  $mytime;
+        $tblParcelNewModel->parcelCurrentStatus_id = "2";
+        $tblParcelNewModel->parcelCurrentStatusName =  "Принят в городе получателя";
+        $tblParcelNewModel->parcelCurrentStatusDescription = "Статус посылки успешно обновлен";
+        $tblParcelNewModel->parcelCurrentStatusUpdateDate =  $mytime;
+        $tblParcelNewModel->parcelDeliveryType_id =  "0";
+        $tblParcelNewModel->parcelDeliveryTypeName =  "До офиса";
+        $tblParcelNewModel->parcelPlan_id =  "2";
+        $tblParcelNewModel->parcelPlanName =  "Стандарт";
+        $tblParcelNewModel->parcelDeliveryTimeFrom = "3-5";
+        $tblParcelNewModel->parcelDeliveryTimeTo =  "3-5";
+        $tblParcelNewModel->parcelPayer_id =  "1";
+        $tblParcelNewModel->parcelPayerName =  "Отправитель";
+        $tblParcelNewModel->parcelCourierService =  "1";
+        $tblParcelNewModel->parcelDiscount =  "1";
+        $tblParcelNewModel->parcelNalBeznal =  "1";
+        $tblParcelNewModel->parcelPriceUS =  "9.767";
+        $tblParcelNewModel->parcelPriceRU =  "9.767";
+        $tblParcelNewModel->parcelPriceUZS =  "9.767";
+        $tblParcelNewModel->senderUser_id =  "10";
+        $tblParcelNewModel->senderUserRole_id =  "4";
+        $tblParcelNewModel->senderUserName =  "Stafft";
+        $tblParcelNewModel->senderUserPhone =  "+998978460180";
+        $tblParcelNewModel->senderUserAdressLongitude =  "0";
+        $tblParcelNewModel->senderUserAdressLattitude =  "0";
+        $tblParcelNewModel->senderUserAdress =  "795919, Нижегородская область, город Видное, проезд Косиора, 89";
+        $tblParcelNewModel->senderUserEmail =  "stafft@gmail.com";
+        $tblParcelNewModel->senderUserBranch_id =  "2";
+        $tblParcelNewModel->senderUserBranchName =  "Tashkent";
+        $tblParcelNewModel->senderCompany_id =  "4";
+        $tblParcelNewModel->senderCompanyName =  "CompanyTashkent";
+        $tblParcelNewModel->senderDirector_id =  "9";
+        $tblParcelNewModel->senderDirectorName =  "Directort";
+        $tblParcelNewModel->recipientUser_id =  "5";
+        $tblParcelNewModel->recipientUserRole_id =  "4";
+        $tblParcelNewModel->recipientUserName =  "Staffm";
+        $tblParcelNewModel->recipientUserPhone =  "+76874517400";
+        $tblParcelNewModel->recipientUserAdressLongitude =  "0";
+        $tblParcelNewModel->recipientUserAdressLattitude =  "0";
+        $tblParcelNewModel->recipientUserAdress =  "471430, Свердловская область, город Солнечногорск, пл. Домодедовская, 56";
+        $tblParcelNewModel->recipientUserEmail =  "staffm@gmail.com";
+        $tblParcelNewModel->recipientUserBranch_id =  "1";
+        $tblParcelNewModel->recipientUserBranchName =  "Moscow";
+        $tblParcelNewModel->recipientCompany_id =  "3";
+        $tblParcelNewModel->recipientCompanyName =  "CompanyMoscow";
+        $tblParcelNewModel->recipientDirector_id =  "4";
+        $tblParcelNewModel->recipientDirectorName =  "Directorm";
+        $tblParcelNewModel->senderManager_id =  "7";
+        $tblParcelNewModel->senderManagerName =  "Managert";
+        $tblParcelNewModel->recipientManager_id =  "2";
+        $tblParcelNewModel->recipientManagerName =  "Managerm";
+        $tblParcelNewModel->parcelCourier_id =  "0";
+        $tblParcelNewModel->parcelCourierName =  "0";
+        $tblParcelNewModel->newSender =  "0";
+        $tblParcelNewModel->newRecipient =  "0";
+        $tblParcelNewModel->save();
+        $id = 2;
+        $tblParcelStatusHistoryModel = new tblParcelStatusHistoryModel();
+
+        $tblParcelStatusHistoryModel->refNumber = $refNumber1;
+        $tblParcelStatusHistoryModel->parcelStatus_id = '2';
+        $tblParcelStatusHistoryModel->parcelStatus = 'Принят в городе отправителя';
+        $tblParcelStatusHistoryModel->parcelCurrentStatusDescription = 'Посылка благополучна было принято в городе отправителя';
+        $tblParcelStatusHistoryModel->parcelStatusDate = $mytime;
+        $tblParcelStatusHistoryModel->save();
+        return redirect()->route('manager',  compact(['user', 'id']))->with('status', 'Новая посылка успешно добавлена');
+
+    }
+
+    public function addparcelm()
+    {
+        $user = Auth::user();
+       $tblParcelNewModel = new tblParcelNewModel();
+       $mytime  = Carbon::now();
+       $mytime->setTimezone('Asia/Tashkent');
+       $mytime->toDateTimeString();
+       $refNumber1 = rand(100000000000, 999999999999);
+    //    $digits =(string)$refNumber1;
+    //    $even_sum = $digits{1} + $digits{3} + $digits{5} + $digits{7} + $digits{9} + $digits{11};
+    //    $even_sum_three = $even_sum * 3;
+    //    $odd_sum = $digits{0} + $digits{2} + $digits{4} + $digits{6} + $digits{8} + $digits{10};
+    //    $total_sum = $even_sum_three + $odd_sum;
+    //    $next_ten = (ceil($total_sum/10))*10;
+    //    $check_digit = $next_ten - $total_sum;
+    //    $refNumber = $digits . $check_digit;
+
+       $tblParcelNewModel->refNumber = $refNumber1;
+        $tblParcelNewModel->parcelDescription =  "Текстильные образцы";
+        $tblParcelNewModel->parcelWeight =  "1";
+        $tblParcelNewModel->parcelLength =  "30";
+        $tblParcelNewModel->parcelWidth =  "25";
+        $tblParcelNewModel->parcelHeight =  "5";
+        $tblParcelNewModel->parcelImage =  "storage/images/4805197089687-photo_2020-03-09_15-50-56.jpg";
+        $tblParcelNewModel->parcelInvoiceImage = "storage/images/4805197089687-photo_2020-03-09_15-50-56.jpg";
+        $tblParcelNewModel->parcelCreateDate =  $mytime;
+        $tblParcelNewModel->parcelCurrentStatus_id = "2";
+        $tblParcelNewModel->parcelCurrentStatusName =  "Принят в городе получателя";
+        $tblParcelNewModel->parcelCurrentStatusDescription = "Статус посылки успешно обновлен";
+        $tblParcelNewModel->parcelCurrentStatusUpdateDate =  $mytime;
+        $tblParcelNewModel->parcelDeliveryType_id =  "0";
+        $tblParcelNewModel->parcelDeliveryTypeName =  "До офиса";
+        $tblParcelNewModel->parcelPlan_id =  "2";
+        $tblParcelNewModel->parcelPlanName =  "Стандарт";
+        $tblParcelNewModel->parcelDeliveryTimeFrom = "3-5";
+        $tblParcelNewModel->parcelDeliveryTimeTo =  "3-5";
+        $tblParcelNewModel->parcelPayer_id =  "1";
+        $tblParcelNewModel->parcelPayerName =  "Отправитель";
+        $tblParcelNewModel->parcelCourierService =  "1";
+        $tblParcelNewModel->parcelDiscount =  "1";
+        $tblParcelNewModel->parcelNalBeznal =  "1";
+        $tblParcelNewModel->parcelPriceUS =  "9.767";
+        $tblParcelNewModel->parcelPriceRU =  "9.767";
+        $tblParcelNewModel->parcelPriceUZS =  "9.767";
+        $tblParcelNewModel->senderUser_id =  "5";
+        $tblParcelNewModel->senderUserRole_id =  "4";
+        $tblParcelNewModel->senderUserName =  "Staffm";
+        $tblParcelNewModel->senderUserPhone =  "+76874517400";
+        $tblParcelNewModel->senderUserAdressLongitude =  "0";
+        $tblParcelNewModel->senderUserAdressLattitude =  "0";
+        $tblParcelNewModel->senderUserAdress =  "471430, Свердловская область, город Солнечногорск, пл. Домодедовская, 56";
+        $tblParcelNewModel->senderUserEmail =  "staffm@gmail.com";
+        $tblParcelNewModel->senderUserBranch_id =  "1";
+        $tblParcelNewModel->senderUserBranchName =  "Moscow";
+        $tblParcelNewModel->senderCompany_id =  "3";
+        $tblParcelNewModel->senderCompanyName =  "CompanyMoscow";
+        $tblParcelNewModel->senderDirector_id =  "4";
+        $tblParcelNewModel->senderDirectorName =  "Directorm";
+        $tblParcelNewModel->recipientUser_id =  "10";
+        $tblParcelNewModel->recipientUserRole_id =  "4";
+        $tblParcelNewModel->recipientUserName =  "Stafft";
+        $tblParcelNewModel->recipientUserPhone =  "+998978460180";
+        $tblParcelNewModel->recipientUserAdressLongitude =  "0";
+        $tblParcelNewModel->recipientUserAdressLattitude =  "0";
+        $tblParcelNewModel->recipientUserAdress =  "795919, Нижегородская область, город Видное, проезд Косиора, 89";
+        $tblParcelNewModel->recipientUserEmail =  "stafft@gmail.com";
+        $tblParcelNewModel->recipientUserBranch_id =  "2";
+        $tblParcelNewModel->recipientUserBranchName =  "Tashkent";
+        $tblParcelNewModel->recipientCompany_id =  "3";
+        $tblParcelNewModel->recipientCompanyName =  "CompanyTashkent";
+        $tblParcelNewModel->recipientDirector_id =  "9";
+        $tblParcelNewModel->recipientDirectorName =  "Directort";
+        $tblParcelNewModel->senderManager_id =  "2";
+        $tblParcelNewModel->senderManagerName =  "Managerm";
+        $tblParcelNewModel->recipientManager_id =  "7";
+        $tblParcelNewModel->recipientManagerName =  "Managert";
+        $tblParcelNewModel->parcelCourier_id =  "0";
+        $tblParcelNewModel->parcelCourierName =  "0";
+        $tblParcelNewModel->newSender =  "0";
+        $tblParcelNewModel->newRecipient =  "0";
+        $tblParcelNewModel->save();
+        $id = 2;
+
+        $tblParcelStatusHistoryModel = new tblParcelStatusHistoryModel();
+
+        $tblParcelStatusHistoryModel->refNumber = $refNumber1;
+        $tblParcelStatusHistoryModel->parcelStatus_id = '2';
+        $tblParcelStatusHistoryModel->parcelStatus = 'Принят в городе отправителя';
+        $tblParcelStatusHistoryModel->parcelCurrentStatusDescription = 'Посылка благополучна было принято в городе отправителя';
+        $tblParcelStatusHistoryModel->parcelStatusDate = $mytime;
+        $tblParcelStatusHistoryModel->save();
+        return redirect()->route('manager',  compact(['user', 'id']))->with('status', 'Новая посылка успешно добавлена');
+
+    }
+}

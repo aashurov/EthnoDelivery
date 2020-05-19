@@ -1,0 +1,254 @@
+@extends('layouts.staffmenu')
+
+@section('content')
+<div class="container">
+    {{-- <div class="jumbotron jumbotron-fluid"> --}}
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header"> Все посылки</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                    @endif
+                    <div class="row">
+                        <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                                href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                            {{$all}}</div>
+                        <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                                href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                            {{$alll}}</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">В обработке</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                    <div class="alert alert-success" role="alert">
+                        {{ session('status') }}
+                    </div>
+                    @endif
+                    <div class="row">
+                        <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                                href="{{route('staff.parcel.listofsendedparcel', '1')}}" class="stretched-link"></a>
+                            {{$a1}}</div>
+                        {{-- <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                                href="{{route('staff.parcel.listofwaitingparcel', '1')}}" class="stretched-link"></a>
+                        {{$a11}}
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">Принят в городе отправителя</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '2')}}" class="stretched-link"></a>
+                        {{$a2}}</div>
+                    {{-- <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '2')}}" class="stretched-link"></a>
+                    {{$a22}}
+                </div> --}}
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="col-md-3">
+    <div class="card">
+        <div class="card-header">Отправлен в транзитный город</div>
+
+        <div class="card-body">
+            @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+            @endif
+            <div class="row">
+                <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                        href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                    {{$a2}}</div>
+                {{-- <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                        href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                {{$a22}}
+            </div> --}}
+        </div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="row">
+    <div class="col">
+        <p class="text-white">Success.</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">Отправлен в город получателя</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a4}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a44}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">Принят в городе получателя</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a5}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a55}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">На складе готов к выдаче</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a6}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a66}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">На доставке у курьера</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a7}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a77}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col">
+        <p class="text-white">Success.</p>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">Возвращен на склад доставки</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a8}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a88}}</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-header">Доставлен</div>
+
+            <div class="card-body">
+                @if (session('status'))
+                <div class="alert alert-success" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+                <div class="row">
+                    <div class="col text-center"><i class="fa fa-arrow-up"></i><a
+                            href="{{route('staff.parcel.listofsendedparcel', '0')}}" class="stretched-link"></a>
+                        {{$a9}}</div>
+                    <div class="col text-center"><i class="fa fa-arrow-down"></i><a
+                            href="{{route('staff.parcel.listofwaitingparcel', '0')}}" class="stretched-link"></a>
+                        {{$a99}}</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{{-- </div> --}}
+</div>
+@endsection
