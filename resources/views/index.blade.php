@@ -51,17 +51,15 @@
         <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
-                        <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span
-                                class="d-none d-md-inline-block">ethnodeliveryinfo@gmail.com</span></a>
+                    <div class="col-12" style="font-size: .900rem;">
+                        <span class="mr-2  icon-envelope-open-o" style="font-size: .8258rem;"></span> <span
+                                class="d-none d-md-inline-block" style="font-size: .8258rem;">ethnodeliveryinfo@gmail.com</span>
                         <span class="mx-md-2 d-inline-block"></span>
-                        <a href="#" class=""><span class="mr-2  icon-phone"></span> <span
-                                class="d-none d-md-inline-block">+79266800899</span></a>
+                        <span class="mr-2  icon-phone" ></span> <span
+                                class="d-none d-md-inline-block">+79266800899</span>
                         <span class="mx-md-2 d-inline-block"></span>
-
-                        <a href="#" class=""><span class="mr-2  icon-phone"></span> <span
-                                class="d-none d-md-inline-block">+998(99)0055995</span></a>
-
+                            <span class="mr-2  icon-phone"></span> <span
+                                class="d-none d-md-inline-block">+998990055995</span>
                         <div class="float-right">
                             <span class="d-none d-md-inline-block">1 USD =
                             {{ $sum->currencyPrice }}</span>
@@ -70,13 +68,13 @@
                             <span class="d-none d-md-inline-block"></span>1 RUBL =
                             {{ $rubl->currencyPrice }}
                             <span class="mx-md-2 d-inline-block"></span>
-                            <a href="#" class=""><span class="mr-2  icon-telegram"></span> <span
+                            <a href="https://t.me/ethnodeliveryuz" target="_blank" class=""><span class="mr-2  icon-telegram"></span> <span
                                     class="d-none d-md-inline-block"></span></a>
                             {{-- <span class="mx-md-2 d-inline-block"></span> --}}
-                            <a href="#" class=""><span class="mr-2  icon-youtube"></span> <span
+                            <a href="https://www.instagram.com/ethnodelivery_uz/?hl=ru" target="_blank" class=""><span class="mr-2  icon-instagram"></span> <span
                                     class="d-none d-md-inline-block"></span></a>
                             {{-- <span class="mx-md-2 d-inline-block"></span> --}}
-                            <a href="#" class=""><span class="mr-2  icon-facebook"></span> <span
+                            <a href="https://www.facebook.com/fastdeliverytm/" target="_blank"  class=""><span class="mr-2  icon-facebook"></span> <span
                                     class="d-none d-md-inline-block"></span></a>
                             {{-- <span class="mx-md-2 d-inline-block"></span> --}}
                                 @guest
@@ -106,11 +104,11 @@
                             <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                                 <li><a href="#home-section" class="nav-link">Главная</a></li>
                                 <li><a href="#services-section" class="nav-link">Услуги</a></li>
-                                <li><a href="#conditions-section" class="nav-link">Условия</a></li>
+                                <li><a href="#about-section" class="nav-link">О нас</a></li>
                                 <li><a href="#calculator-section" class="nav-link">Калькулятор</a></li>
                                 <li><a href="#pricing-section" class="nav-link">Тарифы</a></li>
-                                <li><a href="#about-section" class="nav-link">О нас</a></li>
                                 <li><a href="#why-us-section" class="nav-link">Почему Мы</a></li>
+                                <li><a href="#conditions-section" class="nav-link">Условия</a></li>
                                 <li><a href="#contact-section" class="nav-link">Контакты</a></li>
                             </ul>
                         </nav>
@@ -144,7 +142,8 @@
 
                         <div class="col-lg-4" data-aos="fade-up">
 
-                            <center><img src="{{ asset('imagesface/mobile.webp')}}" alt="Image" class="img-fluid">
+                            <center>
+                                    <img src="{{ asset('imagesface/mobile.png')}}" alt="Alt Text!">
                             </center>
                             <div class="row align-items-center">
                                 <div class="col-lg-12 ">
@@ -1126,10 +1125,12 @@
 
                     </div>
                 </div>
+
+
                 <div class="col-md-4 ml-auto">
 
                     <h2 class="footer-heading mb-4">Дополнительно</h2>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled main-menu">
                         <li><a href="#about-section">О нас</a></li>
                         <!-- <li><a href="#">Testimonials</a></li> -->
                         <li><a href="#services-section">Нащи услуги</a></li>
@@ -1149,29 +1150,26 @@
           </div> -->
 
 
-                    <!-- <h2 class="footer-heading mb-4">Follow Us</h2>
-          <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-          <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-          </form> -->
+                    <h2 class="footer-heading mb-4">Мы в социальных сетях</h2>
+                    <a href="https://t.me/ethnodeliveryuz" target="_blank" class="pl-3 pr-3"><span class="icon-telegram"></span></a>
+                    <a href="https://www.instagram.com/ethnodelivery_uz/?hl=ru" target="_blank" class="pl-3 pr-3"><span class="mr-2  icon-instagram"></span></a>
+                    <a href="https://www.facebook.com/fastdeliverytm/" target="_blank" class="pl-3 pr-3"><span class="icon-facebook"></span></a>
+
                 </div>
             </div>
-            <div class="row pt-5 mt-5 text-center">
-                <div class="col-md-12">
-                    <div class="border-top pt-5">
-                        <p class="copyright">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
 
-                            </script> Все права защищены | Быстрые перевозки Москва Ташкент Москва Ethno Delivery
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <div class="border-top pt-5">
+                    <p class="copyright">
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> Все права защищены | Быстрые перевозки Москва Ташкент Москва Ethno Delivery
+                    </p>
                 </div>
-
             </div>
+
         </div>
     </footer>
 
