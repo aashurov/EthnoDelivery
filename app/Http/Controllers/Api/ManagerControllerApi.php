@@ -43,8 +43,12 @@ class ManagerControllerApi extends Controller
         $_88 = tblParcelNewModel::where('parcelCurrentStatus_id', '8')->where('senderUserBranch_id', '!=', $userBranch_id)->count();
         $_99 = tblParcelNewModel::where('parcelCurrentStatus_id', '9')->where('senderUserBranch_id', '!=', $userBranch_id)->count();
 
-        return response()->json(array('all' => $all, 'a1' => $_1, 'a2' => $_2, 'a3' => $_3, 'a4' => $_4, 'a5' => $_5, 'a6' => $_6, 'a7' => $_7, 'a8' => $_8, 'a9' => $_9, 'alll' => $alll, 'a11' => $_11, 'a22' => $_22, 'a33' => $_33, 'a44' => $_44, 'a55' => $_55, 'a66' => $_66, 'a77' => $_77, 'a88' => $_88, 'a99' => $_99));
+        // return response()->json(array('all' => $all, 'a1' => $_1, 'a2' => $_2, 'a3' => $_3, 'a4' => $_4, 'a5' => $_5, 'a6' => $_6, 'a7' => $_7, 'a8' => $_8, 'a9' => $_9, 'alll' => $alll, 'a11' => $_11, 'a22' => $_22, 'a33' => $_33, 'a44' => $_44, 'a55' => $_55, 'a66' => $_66, 'a77' => $_77, 'a88' => $_88, 'a99' => $_99));
+        return response()->json(array('all' => "$all", 'a1' => "$_1", 'a2' => "$_2", 'a3' => "$_3", 'a4' => "$_4", 'a5' => "$_5", 'a6' => "$_6", 'a7' => "$_7", 'a8' => "$_8", 'a9' => "$_9", 'alll' => "$alll", 'a11' => "$_11", 'a22' => "$_22", 'a33' => "$_33", 'a44' => "$_44", 'a55' => "$_55", 'a66' => "$_66", 'a77' => "$_77", 'a88' => "$_88", 'a99' => "$_99"));
+
+        // return response()->json(array('all' => "all", 'a1' => "_1", 'a2' => "_2", 'a3' => "90"));
     }
+
     public function listofsendedparcel($id)
     {
         $user = Auth::user();
