@@ -51,9 +51,9 @@
         <div class="top-bar">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12" style="font-size: .900rem;">
-                        <span class="mr-2  icon-envelope-open-o" style="font-size: .8258rem;"></span> <span
-                                class="d-none d-md-inline-block" style="font-size: .8258rem;">ethnodeliveryinfo@gmail.com</span>
+                    <div class="col-12" style="font-size: 1rem;">
+                        <span class="mr-2  icon-envelope-open-o" style="font-size: 1rem;"></span> <span
+                                class="d-none d-md-inline-block" style="font-size: 1rem;">ethnodeliveryinfo@gmail.com</span>
                         <span class="mx-md-2 d-inline-block"></span>
                         <span class="mr-2  icon-phone" ></span> <span
                                 class="d-none d-md-inline-block">+79266800899</span>
@@ -744,88 +744,37 @@
             </div>
         </div>
 
- {{-- <div class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">
+ <div class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">
         <div class="container">
 
             <div class="text-center mb-5">
                 <div class="block-heading-1">
-                    <h2>Happy Clients</h2>
+                    <h2>Мнение наших клиентов</h2>
                 </div>
             </div>
 
             <div class="owl-carousel nonloop-block-13">
                 <div>
                     <div class="block-testimony-1 text-center">
-
-                        <blockquote class="mb-4">
-                            <p>&ldquo;The Big Oxmox advised her not to do so, because there were thousands of bad
-                                Commas, wild
-                                Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She
-                                packed her seven
-                                versalia, put her initial into the belt
-                                and made herself on the way.&rdquo;</p>
-                        </blockquote>
-
-                        <figure>
-                            <img src="{{ asset('imagesface/person_4.jpg')}}" alt="Image"
-        class="img-fluid rounded-circle mx-auto">
-        </figure>
-        <h3 class="font-size-20 text-black">Ricky Fisher</h3>
+                            <div class="fb-post" data-href="https://www.facebook.com/ulugbek.kamolov.18/posts/2778418118920957" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/ulugbek.kamolov.18/posts/2778418118920957" class="fb-xfbml-parse-ignore"><p>Ребята молодцы, успели доставить товар до приостановления авиасообщений. Рекомендую всем!</p>Опубликовано <a href="https://www.facebook.com/ulugbek.kamolov.18">Ulugbek Kamolov</a>&nbsp;<a href="https://developers.facebook.com/ulugbek.kamolov.18/posts/2778418118920957">Вторник, 17 марта 2020 г.</a></blockquote></div>
     </div>
     </div>
 
     <div>
         <div class="block-testimony-1 text-center">
-            <blockquote class="mb-4">
-                <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an
-                    almost
-                    unorthographic life One day however a small line of blind text by the name of Lorem
-                    Ipsum decided to
-                    leave for the far World of Grammar.&rdquo;</p>
-            </blockquote>
-            <figure>
-                <img src="{{ asset('imagesface/person_2.jpg')}}" alt="Image" class="img-fluid rounded-circle mx-auto">
-            </figure>
-            <h3 class="font-size-20 mb-4 text-black">Ken Davis</h3>
-
+            <div class="fb-post" data-href="https://www.facebook.com/angela.sheen.33/posts/2804873249597100" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/angela.sheen.33/posts/2804873249597100" class="fb-xfbml-parse-ignore"><p>Спасибо за быструю доставку! Очень ответственная команда,все пришло в срок</p>Опубликовано <a href="#" role="button">Angela Sheen</a>&nbsp;<a href="https://developers.facebook.com/angela.sheen.33/posts/2804873249597100">Воскресенье, 1 марта 2020 г.</a></blockquote></div>
         </div>
     </div>
 
     <div>
         <div class="block-testimony-1 text-center">
-
-
-            <blockquote class="mb-4">
-                <p>&ldquo;A small river named Duden flows by their place and supplies it with the
-                    necessary regelialia.
-                    It is a paradisematic country, in which roasted parts of sentences fly into your
-                    mouth.&rdquo;</p>
-            </blockquote>
-
-            <figure>
-                <img src="{{ asset('imagesface/person_1.jpg')}}" alt="Image" class="img-fluid rounded-circle mx-auto">
-            </figure>
-            <h3 class="font-size-20 text-black">Mellisa Griffin</h3>
-
-
+            <div class="fb-post" data-href="https://www.facebook.com/salamova94/posts/2588058281311092" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/salamova94/posts/2588058281311092" class="fb-xfbml-parse-ignore"><p>Spasibo za dostavku iz ikea👍 malishu vse ponravilos</p>Опубликовано <a href="#" role="button">Xali Salamova</a>&nbsp;<a href="https://developers.facebook.com/salamova94/posts/2588058281311092">Воскресенье, 22 декабря 2019 г.</a></blockquote></div>
         </div>
     </div>
 
     <div>
         <div class="block-testimony-1 text-center">
-            <blockquote class="mb-4">
-                <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and
-                    Consonantia, there
-                    live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-                    the Semantics, a
-                    large language ocean.&rdquo;</p>
-            </blockquote>
-
-            <figure>
-                <img src="{{ asset('imagesface/person_3.jpg')}}" alt="Image" class="img-fluid rounded-circle mx-auto">
-            </figure>
-            <h3 class="font-size-20 mb-4 text-black">Robert Steward</h3>
-
+            <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=483499832277802&amp;id=100018533672762" data-show-text="true" data-width=""><blockquote cite="https://developers.facebook.com/permalink.php?story_fbid=483499832277802&amp;id=100018533672762" class="fb-xfbml-parse-ignore"><p>В пятницу отправили документ с Ташкента, в понедельник он уже был на руках в Москве. Ответственные, вежливые и очень...</p>Опубликовано <a href="https://www.facebook.com/people/Yana-Tiffin/100018533672762">Yana Tiffin</a>&nbsp;<a href="https://developers.facebook.com/permalink.php?story_fbid=483499832277802&amp;id=100018533672762">Понедельник, 16 декабря 2019 г.</a></blockquote></div>
         </div>
     </div>
 
@@ -833,7 +782,7 @@
     </div>
 
     </div>
-    </div> --}}
+    </div>
 
     <div class="site-section" id="conditions-section">
     <div class="container">
@@ -1043,49 +992,47 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-                    {{-- <form action="#" method="post">
+                    <form action="#" method="post">
                         <div class="form-group row">
-                            <div class="col-md-6 mb-4 mb-lg-0">
-                                <input type="text" class="form-control" placeholder="First name">
+                            <div class="col-md-12 mb-12 mb-lg-12">
+                                <input type="text" class="form-control" placeholder="Ваше имя">
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="First name">
+
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" placeholder="Email адрес">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Email address">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30"
+                                <textarea name="" id="" class="form-control" placeholder="Ваше сообшение." cols="30"
                                     rows="10"></textarea>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-6 mr-auto">
+                            <div class="col-md-12 mr-auto">
                                 <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5"
-                                    value="Send Message">
+                                    value="Отправить">
                             </div>
                         </div>
-                    </form> --}}
+                    </form>
                 </div>
-                <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="200">
                     <div class="bg-white p-3 p-md-5">
                         <h3 class="text-black mb-4">Наши контакты</h3>
                         <ul class="list-unstyled footer-link">
                             <li class="d-block mb-3">
                                 <span class="d-block text-black">Адрес:</span>
-                                <span> г. Москва, 2-Нагатинский проезд 2, строение 8</span>
+                                <span> г. Москва, Винокурова дом 7/5 корпус 3, 117449</span>
                                 <p><span> г. Ташкент, Проспект Амира Темура 1</span>
 
                             </li>
                             <li class="d-block mb-3"><span
                                     class="d-block text-black">Телефон:</span><span>+79266800899</span> //
-                                <span>+998990055995
+                                <span>+998990050595
                                 </span></li>
                             <li class="d-block mb-3"><span
                                     class="d-block text-black">Email:</span><span>ethnodeliveryinfo@gmail.com</span>
@@ -1112,16 +1059,16 @@
                                 работы. Он не по ту сторону нашего бизнеса. Он – его часть. Мы не делаем ему одолжение,
                                 обслуживая его. Он делает нам одолжение, давая возможность это сделать. </p>
                         </div>
-                        <div class="col-md-4 ml-auto">
-                            {{-- <h2 class="footer-heading mb-4">Дополнительно</h2>
+                    {{-- <div class="col-md-4 ml-auto">
+                             <h2 class="footer-heading mb-4">Контакты</h2>
                             <ul class="list-unstyled">
                                 <li><a href="#about-section">О нас</a></li>
                                 <!-- <li><a href="#">Testimonials</a></li> -->
                                 <li><a href="#services-section">Нащи услуги</a></li>
                                 <!-- <li><a href="#">Privacy</a></li> -->
                                 <li><a href="#contact-section">Контакты</a></li>
-                            </ul> --}}
-                        </div>
+                            </ul>
+                        </div> --}}
 
                     </div>
                 </div>
@@ -1193,11 +1140,12 @@
     <script src="{{ asset('jsface/map.js')}}"></script>
     {{-- <script src="{{ asset('jsface/openstreetmap.js')}}"></script> --}}
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACfuyBDhOKGOdpVT9dR29oHXki7Zgs3Rc&callback=initMap">
-    </script>
-
-
+    {{-- <script async defer --}}
+        {{-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACfuyBDhOKGOdpVT9dR29oHXki7Zgs3Rc&callback=initMap"> --}}
+    {{-- </script> --}}
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=2207034049511596&autoLogAppEvents=1"></script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
 </body>
