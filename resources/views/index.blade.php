@@ -68,15 +68,9 @@
                             <span class="d-none d-md-inline-block">1 RUBL =
                             {{ $rubl->currencyPrice }}</span>
                             <span class="mx-md-2 d-inline-block"></span>
-                            <a href="https://t.me/ethnodeliveryuz" target="_blank" class=""><span class="mr-2  icon-telegram"></span> <span
-                                    class="d-none d-md-inline-block"></span></a>
-                            {{-- <span class="mx-md-2 d-inline-block"></span> --}}
-                            <a href="https://www.instagram.com/ethnodelivery_uz/?hl=ru" target="_blank" class=""><span class="mr-2  icon-instagram"></span> <span
-                                    class="d-none d-md-inline-block"></span></a>
-                            {{-- <span class="mx-md-2 d-inline-block"></span> --}}
-                            <a href="https://www.facebook.com/fastdeliverytm/" target="_blank"  class=""><span class="mr-2  icon-facebook"></span> <span
-                                    class="d-none d-md-inline-block"></span></a>
-                            {{-- <span class="mx-md-2 d-inline-block"></span> --}}
+                            <a href="https://t.me/ethnodeliveryuz" target="_blank" class=""><span class="mr-2  icon-telegram"></span> </a>
+                            <a href="https://www.instagram.com/ethnodelivery_uz/?hl=ru" target="_blank" class=""><span class="mr-2  icon-instagram"></span> </a>
+                            <a href="https://www.facebook.com/fastdeliverytm/" target="_blank"  class=""><span class="mr-2  icon-facebook"></span> </a>
                                 @guest
                                 <a href="{{ route('login') }}" class=""><span class="mr-2 d-none icon-sign-in"></span> <span
                                     class="d-none d-md-inline-block">Вход</span></a>
