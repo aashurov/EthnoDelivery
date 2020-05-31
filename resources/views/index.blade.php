@@ -78,10 +78,10 @@
                                     class="d-none d-md-inline-block"></span></a>
                             {{-- <span class="mx-md-2 d-inline-block"></span> --}}
                                 @guest
-                                <a href="{{ route('login') }}" class=""><span class="mr-2  icon-sign-in"></span> <span
+                                <a href="{{ route('login') }}" class=""><span class="mr-2 d-none icon-sign-in"></span> <span
                                     class="d-none d-md-inline-block">Вход</span></a>
                                     @else
-                                    <a href="{{ Illuminate\Support\Str::lower(auth()->user()->role) }}/dashboard" class=""><span class="mr-2  icon-sign-in"></span> <span
+                                    <a href="{{ Illuminate\Support\Str::lower(auth()->user()->role) }}/dashboard" class=""><span class="mr-2  d-none icon-sign-in"></span> <span
                                         class="d-none d-md-inline-block">Кабинет</span></a>
                                     @endguest
                         </div>
