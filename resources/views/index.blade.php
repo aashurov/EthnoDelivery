@@ -56,10 +56,10 @@
                                 class="d-none d-md-inline-block" style="font-size: 1rem;">ethnodeliveryinfo@gmail.com</span>
                         <span class="mx-md-2 d-inline-block"></span>
                         <span class="mr-2  icon-phone" ></span> <span
-                                class="d-none d-md-inline-block">+79266800899</span>
+                                class=" d-md-inline-block">+79266800899</span>
                         <span class="mx-md-2 d-inline-block"></span>
                             <span class="mr-2  icon-phone"></span> <span
-                                class="d-none d-md-inline-block">+998990055995</span>
+                                class="d-md-inline-block">+998990055995</span>
                         <div class="float-right">
                             <span class="d-none d-md-inline-block">1 USD =
                             {{ $sum->currencyPrice }}</span>
