@@ -52,7 +52,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12" style="font-size: 1rem;">
-                        <span class="mr-2  icon-envelope-open-o" style="font-size: 1rem;"></span> <span
+                        <span class="mr-2 d-none icon-envelope-open-o" style="font-size: 1rem;"></span> <span
                                 class="d-none d-md-inline-block" style="font-size: 1rem;">ethnodeliveryinfo@gmail.com</span>
                         <span class="mx-md-2 d-inline-block"></span>
                         <span class="mr-2  icon-phone" ></span> <span
@@ -65,8 +65,8 @@
                             {{ $sum->currencyPrice }}</span>
                             <span class="mx-md-2 d-inline-block"></span>
 
-                            <span class="d-none d-md-inline-block"></span>1 RUBL =
-                            {{ $rubl->currencyPrice }}
+                            <span class="d-none d-md-inline-block">1 RUBL =
+                            {{ $rubl->currencyPrice }}</span>
                             <span class="mx-md-2 d-inline-block"></span>
                             <a href="https://t.me/ethnodeliveryuz" target="_blank" class=""><span class="mr-2  icon-telegram"></span> <span
                                     class="d-none d-md-inline-block"></span></a>
