@@ -1025,8 +1025,8 @@
 
                             </li>
                             <li class="d-block mb-3"><span
-                                    class="d-block text-black">Телефон:</span><span>+79266800899</span> //
-                                <span>+998990050595
+                                    class="d-block text-black">Телефон:</span><span>+7 969 179-90-00</span> //
+                                <span>+99899 005 9559
                                 </span></li>
                             <li class="d-block mb-3"><span
                                     class="d-block text-black">Email:</span><span>ethnodeliveryinfo@gmail.com</span>
