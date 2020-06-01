@@ -3,10 +3,23 @@
 <meta charset="UTF-8" />
 
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168116949-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168116949-1');
+</script>
+
+
+
     <title>Ethno Delivery &mdash; Перевозки Москва Ташкент</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content="Быстрые перевозки Москва Ташкент Москва">
+    <meta name="keywords" content="перевозка грузов, грузовые перевозки, курьерская служба, грузоперевозки москва ташкент, перевозка грузов москва ташкент, доставка грузов москва ташкент, доставка посылок москва ташкент, доставка документов москва ташкент, грузовые перевозки москва ташкент">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('fontsface/icomoon/style.css')}}">
@@ -1022,7 +1035,6 @@
                                 <span class="d-block text-black">Адрес:</span>
                                 <span> г. Москва, Винокурова дом 7/5 корпус 3, 117449</span>
                                 <p><span> г. Ташкент, Проспект Амира Темура 1</span>
-
                             </li>
                             <li class="d-block mb-3"><span
                                     class="d-block text-black">Телефон:</span><span>+7 969 179-90-00</span> //
