@@ -69,7 +69,7 @@
                                 class="d-none d-md-inline-block" style="font-size: 1rem;">ethnodeliveryinfo@gmail.com</span>
                         <span class="mx-md-2 d-inline-block"></span>
                         <span class="mr-2  icon-phone" ></span> <span
-                                class=" d-md-inline-block">+89691799000</span>
+                                class=" d-md-inline-block">8 (969) 179-90-00</span>
                         <span class="mx-md-2 d-inline-block"></span>
                             <span class="mr-2  icon-phone"></span> <span
                                 class="d-md-inline-block">+998990059559</span>
