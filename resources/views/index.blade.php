@@ -1163,6 +1163,13 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=2207034049511596&autoLogAppEvents=1"></script>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script>
+        gtag('config', 'AW-978324547/w6dNCNWS-NIBEMOYwNID', {
+          'phone_conversion_number': '8 (969) 179-90-00'
+        });
+      </script>
+
+
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
 </body>
 
