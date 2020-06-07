@@ -1168,6 +1168,12 @@
           'phone_conversion_number': '8 (969) 179-90-00'
         });
       </script>
+<script>
+    gtag('config', 'AW-978324547/-b3DCMef-NIBEMOYwNID', {
+      'phone_conversion_number': '+998990059559'
+    });
+  </script>
+
 
 
     <link href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" rel="stylesheet" />
