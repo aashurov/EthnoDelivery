@@ -37,6 +37,16 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('cssface/style.css')}}">
+<!-- Global site tag (gtag.js) - Google Ads: 978324547 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-978324547"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-978324547');
+</script>
+
 
 </head>
 
