@@ -3,15 +3,13 @@
 <meta charset="UTF-8" />
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168116949-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-168116949-1');
-</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5NRKXJZ');</script>
+    <!-- End Google Tag Manager -->
 
 
 
@@ -37,6 +35,8 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('cssface/style.css')}}">
+
+
 <!-- Global site tag (gtag.js) - Google Ads: 978324547 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-978324547"></script>
 <script>
@@ -64,7 +64,10 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NRKXJZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="overlayer"></div>
     <div class="loader">
         <div class="spinner-border text-primary" role="status">
