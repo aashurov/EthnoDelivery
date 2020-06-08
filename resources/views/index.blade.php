@@ -64,10 +64,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NRKXJZ"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+
     <div id="overlayer"></div>
     <div class="loader">
         <div class="spinner-border text-primary" role="status">
@@ -1179,16 +1176,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=2207034049511596&autoLogAppEvents=1"></script>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-    <script>
-        gtag('config', 'AW-978324547/w6dNCNWS-NIBEMOYwNID', {
-          'phone_conversion_number': '8 (969) 179-90-00'
-        });
-      </script>
-<script>
-    gtag('config', 'AW-978324547/-b3DCMef-NIBEMOYwNID', {
-      'phone_conversion_number': '+998990059559'
-    });
-  </script>
+
 
 
 
