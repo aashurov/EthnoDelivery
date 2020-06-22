@@ -505,7 +505,7 @@
                             </div>
                             <ul class="list-unstyled ul-check success mb-5">
                                 <li>2 кг Минимальный вес</li>
-                                <li>5-10 дней срок доставки</li>
+                                <li>10-14 дней срок доставки</li>
                                 <li class="remove">Онлайн отслеживание отправки</li>
                                 <li class="remove">24/7 Информационный центр</li>
                             </ul>
