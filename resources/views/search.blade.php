@@ -115,10 +115,12 @@
                             <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
                                 <li><a href="#home-section" class="nav-link">Главная</a></li>
                                 <li><a href="#services-section" class="nav-link">Услуги</a></li>
+                                <li><a href="#about-section" class="nav-link">О нас</a></li>
                                 <li><a href="#calculator-section" class="nav-link">Калькулятор</a></li>
                                 <li><a href="#pricing-section" class="nav-link">Тарифы</a></li>
-                                <li><a href="#about-section" class="nav-link">О нас</a></li>
-                                <li><a href="#why-us-section" class="nav-link">Почему Мы</a></li>
+                                {{-- <li><a href="#why-us-section" class="nav-link">Почему Мы</a></li> --}}
+                                <li><a href="#conditions-section" class="nav-link">Условия</a></li>
+                                <li><a href="#conditions-section" class="nav-link">Оферта</a></li>
                                 <li><a href="#contact-section" class="nav-link">Контакты</a></li>
                             </ul>
                         </nav>
